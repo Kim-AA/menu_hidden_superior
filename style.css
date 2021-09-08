@@ -2,7 +2,7 @@ body{
     
     display: flex;
     background-color: black;
-    overflow: hidden;
+    
  }
 
 
@@ -26,27 +26,34 @@ body{
     justify-content: space-between;
     padding: 10px;
     background-color: rgb(163, 163, 163);
-    position: absolute; /* Set the navbar to fixed position */
+    position: fixed; /* Set the navbar to fixed position */
     top: 0px;
     width: 48.5%;
+    transition: all 1.5s;
  }
 .menu_top a:hover {
     background: rgb(216, 20, 101);
 
 }
 
-.menu_top.transform{
+/*.menu_top.transform_down{
     position: fixed;
 
+}*/
+
+.menu_top.hide_up{
+    top: -100px;
 }
+
  .menu_bottom{
      display: flex;
      justify-content: space-between;
      padding: 10px;
      background-color: rgb(163, 163, 163);
      position: fixed; /* Set the navbar to fixed position */
-     bottom: 0; 
      width: 48.5%;
+     transition: all 1.5s;
+     bottom:0px
     }
 
 
@@ -54,9 +61,13 @@ body{
     background: rgb(216, 20, 101);
   }
 
-  .menu_bottom.hide{
-      transition: all 1.5s;
-      bottom: -30px;
+  /*.menu_bottom.transform_up{
+    position: fixed;
+
+}*/
+
+  .menu_bottom.hide_down{
+      bottom:-100px;
   }
 
   a{
