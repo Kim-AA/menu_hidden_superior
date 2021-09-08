@@ -28,6 +28,10 @@ body{
     width: 48.5%;
    }
 
+.menu_top a:hover {
+    background: rgb(216, 20, 101);
+    color: rgb(248, 244, 244);
+  }
  .menu_bottom{
      display: flex;
      justify-content: space-between;
