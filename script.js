@@ -1,7 +1,9 @@
-let menu = document.querySelectorAll("menu_top")
+let menu_top = document.querySelector('.menu_top')
 
-menu.addEventListener("scroll", myFunction(element) {
-    function myFunction(element){
-        element.remove();
-      }
-  });
+document.addEventListener('scroll', function(){
+    menu_top.classList.add('transform')
+});
+
+document.addEventListener('scrollTop', function(){
+    menu_top.classList.remove('transform')
+})

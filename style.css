@@ -25,12 +25,19 @@ body{
     justify-content: space-between;
     padding: 10px;
     background-color: rgb(163, 163, 163);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    position: absolute; /* Set the navbar to fixed position */
+    transform: translateY(-100px);
     width: 48.5%;
+    transition: all 1.5s;
  }
 .menu_top a:hover {
     background: rgb(216, 20, 101);
+
+}
+
+.menu_top.transform{
+    transform: translateY(0px);
+    position: fixed;
 
 }
  .menu_bottom{
@@ -42,6 +49,8 @@ body{
      bottom: 0; 
      width: 48.5%;
     }
+
+ 
 
  .menu_bottom a:hover {
     background: rgb(216, 20, 101);
