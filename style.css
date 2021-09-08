@@ -22,7 +22,11 @@ body{
      display: flex;
      justify-content: space-between;
      padding: 10px;
- }
+     background-color: rgb(42, 190, 248);
+     position: fixed; /* Set the navbar to fixed position */
+     bottom: 0; /* Position the navbar at the top of the page */
+     width: 48.5%;
+    }
 
  .menu_bottom a:hover {
     background: rgb(216, 20, 101);
