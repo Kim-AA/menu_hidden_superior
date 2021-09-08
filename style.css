@@ -11,6 +11,8 @@ body{
     background-color: white;
     display: block;
     margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
     text-align: center;
  }
 
@@ -22,29 +24,27 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgb(42, 190, 248);
+    background-color: rgb(163, 163, 163);
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 48.5%;
-   }
-
+ }
 .menu_top a:hover {
     background: rgb(216, 20, 101);
-    color: rgb(248, 244, 244);
-  }
+
+}
  .menu_bottom{
      display: flex;
      justify-content: space-between;
      padding: 10px;
-     background-color: rgb(42, 190, 248);
+     background-color: rgb(163, 163, 163);
      position: fixed; /* Set the navbar to fixed position */
-     bottom: 0; /* Position the navbar at the top of the page */
+     bottom: 0; 
      width: 48.5%;
     }
 
  .menu_bottom a:hover {
     background: rgb(216, 20, 101);
-    color: rgb(248, 244, 244);
   }
 
   a{
