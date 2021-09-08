@@ -2,6 +2,7 @@ body{
     
     display: flex;
     background-color: black;
+    overflow: hidden;
  }
 
 
@@ -25,12 +26,17 @@ body{
     justify-content: space-between;
     padding: 10px;
     background-color: rgb(163, 163, 163);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    position: absolute; /* Set the navbar to fixed position */
+    top: 0px;
     width: 48.5%;
  }
 .menu_top a:hover {
     background: rgb(216, 20, 101);
+
+}
+
+.menu_top.transform{
+    position: fixed;
 
 }
  .menu_bottom{
@@ -43,9 +49,16 @@ body{
      width: 48.5%;
     }
 
+
  .menu_bottom a:hover {
     background: rgb(216, 20, 101);
   }
-  .menu_top.hidden{
-      display:none;
+
+  .menu_bottom.hide{
+      transition: all 1.5s;
+      bottom: -30px;
+  }
+
+  a{
+      padding: 20px;
   }
