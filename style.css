@@ -13,7 +13,7 @@ body{
     display: block;
     margin: auto;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
     text-align: center;
  }
 
@@ -35,7 +35,7 @@ body{
 
 }
 
-.menu_top.transform_down{
+.menu_top.show_down{
     position: fixed;
 
 }
